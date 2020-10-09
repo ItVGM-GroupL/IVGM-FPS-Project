@@ -4,21 +4,33 @@ using UnityEngine;
 
 public class BoulderMove : MonoBehaviour
 { 
-    Collider triggerZone;
+    BoxCollider triggerZone;
+	Rigidbody boulderBody;
+	bool boulderTriggered = false; 
     //use this for initialization  
   
     void Start () {  
-           triggerZone = GetComponent<Collider>();
-    }  
+           triggerZone = GetComponent<BoxCollider>();
+		   boulderBody = GetComponent<Rigidbody>();
+		  
+	}  
 	
     //Update is called once per frame  
     void Update () {  
-        //this is for x axis' movement  
-  
+	
     }    
 	void OnTriggerEnter(Collider other)
     {
         Damageable check = other.GetComponent<Damageable>();
         if (check == null) return;
+		if(boulderTriggered == false) 
+		TriggerBoulder(); 
     } 
+	
+	void TriggerBoulder()
+	{
+		transform.localPosition = new Vector3(transform.localPosition.x + 10, transform.localPosition.y, transform.localPosition.z);
+		boulderTriggered = true;
+		
+	}
 }

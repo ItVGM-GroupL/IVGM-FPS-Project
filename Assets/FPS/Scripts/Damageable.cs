@@ -2,6 +2,8 @@
 
 public class Damageable : MonoBehaviour
 {
+	 Collider triggerZone;
+	 
     [Tooltip("Multiplier to apply to the received damage")]
     public float damageMultiplier = 1f;
     [Range(0, 1)]
@@ -43,4 +45,11 @@ public class Damageable : MonoBehaviour
             health.TakeDamage(totalDamage, damageSource);
         }
     }
+	void OnTriggerEnter(Collider other)
+    {
+        BoulderMove check = other.GetComponent<BoulderMove>();
+        if (check == null) return;
+		
+		health.TakeDamage(10, other.gameObject);
+	}
 }

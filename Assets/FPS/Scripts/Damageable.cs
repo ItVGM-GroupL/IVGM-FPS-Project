@@ -47,7 +47,7 @@ public class Damageable : MonoBehaviour
     }
 	void OnTriggerEnter(Collider other)
     {
-        BoulderMove check = other.GetComponent<BoulderMove>();
+        SphereCollider check = other.GetComponent<SphereCollider>();
         if (check == null) return;
 		
 		health.TakeDamage(10, other.gameObject);

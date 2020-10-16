@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1569765809048442280}
   - component: {fileID: 1569765809048442281}
   - component: {fileID: 1569765809048442286}
+  - component: {fileID: -3400585650240340297}
   - component: {fileID: 3572619776673971177}
   - component: {fileID: 3572619776673971174}
   m_Layer: 0
@@ -82,6 +83,18 @@ MonoBehaviour:
   rotatingSpeed: 90
   pickupSFX: {fileID: 8300000, guid: 8dfdbc346713580429db9079ad1ff964, type: 3}
   pickupVFXPrefab: {fileID: 100000, guid: 6fe150968adf90d4c84fcac37387c034, type: 3}
+--- !u!114 &-3400585650240340297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569765809048442284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62255561487b7344ba04e0acb4950252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3572619776673971177
 MonoBehaviour:
   m_ObjectHideFlags: 0

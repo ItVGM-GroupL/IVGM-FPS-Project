@@ -683,6 +683,7 @@ GameObject:
   - component: {fileID: 3326101527518595892}
   - component: {fileID: 8987392121895523761}
   - component: {fileID: 7047704280599432800}
+  - component: {fileID: 147685607439084498}
   m_Layer: 0
   m_Name: BasicEnemyPrefab
   m_TagString: Untagged
@@ -779,12 +780,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7805036454305085111}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1857b2df8de24b24190ce9e067d2e1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 5324389483545941680}
   attackStopDistanceRatio: 0.08
   randomHitSparks:
   - {fileID: 0}
@@ -978,6 +979,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &147685607439084498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7805036454305085111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd64bb9be57aead4f8d6ef2a696487c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5324389483545941680}
+  attackStopDistanceRatio: 0.5
+  randomHitSparks: []
+  onDetectVFX: []
+  onDetectSFX: {fileID: 0}
+  MovementSound: {fileID: 8300000, guid: f404f8d3c2a4b4f48989fb1120e78fb8, type: 3}
+  PitchDistortionMovementSpeed:
+    min: 0
+    max: 0
 --- !u!1 &9058639834538016276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,8 +1105,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95082879787689830, guid: 1df49fba1b836aa42b5f4a36c8b7d114,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95082879787689830, guid: 1df49fba1b836aa42b5f4a36c8b7d114,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e029e430e913b374387843833ab0b593, type: 2}
+    - target: {fileID: 95082879787689830, guid: 1df49fba1b836aa42b5f4a36c8b7d114,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df49fba1b836aa42b5f4a36c8b7d114, type: 3}
+--- !u!95 &5324389483545941680 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95082879787689830, guid: 1df49fba1b836aa42b5f4a36c8b7d114,
+    type: 3}
+  m_PrefabInstance: {fileID: 5239310786033332694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5240826851307680698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4201403797357164, guid: 1df49fba1b836aa42b5f4a36c8b7d114,

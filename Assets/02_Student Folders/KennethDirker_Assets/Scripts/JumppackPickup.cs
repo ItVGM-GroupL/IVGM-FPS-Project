@@ -2,28 +2,31 @@
 
 public class JumppackPickup : MonoBehaviour
 {
+    [Tooltip("Sound played on pickup")]
+    public AudioClip pickupSFX;
+
     Pickup m_Pickup;
+    Collider m_Collider;
 
-    void Start()
+    private void Start()
     {
-        m_Pickup = GetComponent<Pickup>();
-        DebugUtility.HandleErrorIfNullGetComponent<Pickup, JumppackPickup>(m_Pickup, this, gameObject);
+        m_Collider = GetComponent<Collider>();
+        DebugUtility.HandleErrorIfNullGetComponent<Collider, Pickup>(m_Collider, this, gameObject);
 
-        // Subscribe to pickup action
-        m_Pickup.onPick += OnPicked;
+        // ensure the physics setup is a kinematic rigidbody trigger
+        m_Collider.isTrigger = true;
     }
 
-    void OnPicked(PlayerCharacterController byPlayer)
+    private void OnTriggerEnter(Collider other)
     {
-        var jumppack = byPlayer.GetComponent<Jumppack>();
-        if (!jumppack)
-            return;
+        Jumppack jumppack = other.GetComponent<Jumppack>();
+        jumppack.Enable();
 
-        if (jumppack.TryUnlock())
+        if (pickupSFX)
         {
-            m_Pickup.PlayPickupFeedback();
-
-            Destroy(gameObject);
+            AudioUtility.CreateSFX(pickupSFX, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
         }
+
+        Destroy(gameObject);
     }
 }

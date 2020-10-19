@@ -82,14 +82,19 @@ public class Jumppack : MonoBehaviour
                 m_PlayerCharacterController.characterVelocity += Vector3.up * totalAcceleration;
 
                 // play jump sound effect
-                if (!audioSource.isPlaying)
-                    audioSource.Play();
+                audioSource.Play();
             }
         }
     }
 
+    public void Enable()
+    {
+        isJumppackUnlocked = true;
+    }
+
     public bool TryUnlock()
     {
+        isJumppackUnlocked = true;
         if (isJumppackUnlocked)
             return false;
 

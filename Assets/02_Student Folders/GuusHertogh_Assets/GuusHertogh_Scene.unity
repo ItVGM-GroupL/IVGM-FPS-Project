@@ -189,7 +189,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loot_Health
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2955994660073681270, guid: 9973c412032becb4ca116ca08be62edf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2955994660073681270, guid: 9973c412032becb4ca116ca08be62edf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9973c412032becb4ca116ca08be62edf, type: 3}
 --- !u!1001 &563466726
 PrefabInstance:

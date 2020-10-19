@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 528546716365072993}
   - component: {fileID: 8924682559891268397}
   m_Layer: 0
-  m_Name: Projectile_Blaster 2
+  m_Name: AdvancedProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   gravityDownAcceleration: 0
   trajectoryCorrectionDistance: 5
   inheritWeaponVelocity: 0
-  damage: 30
+  damage: 1
   areaOfDamage: {fileID: 0}
   radiusColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
 --- !u!1 &5564024855854763701

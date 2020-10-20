@@ -114,7 +114,8 @@ public class PlayerCharacterController : MonoBehaviour
     float m_CameraVerticalAngle = 0f;
     float m_footstepDistanceCounter;
     float m_TargetCharacterHeight;
-
+    float poisonModifier = 1f;          // Poison speedmodifier
+    float PoisonDeltaTime = -1f;        // Time past after poison taken
     const float k_JumpGroundingPreventionTime = 0.2f;
     const float k_GroundCheckDistanceInAir = 0.07f;
 
@@ -262,6 +263,13 @@ public class PlayerCharacterController : MonoBehaviour
             }
 
             float speedModifier = isSprinting ? sprintSpeedModifier : 1f;
+            if (PoisonDeltaTime>=0){
+                if (PoisonDeltaTime < 5){
+                    speedModifier = poisonModifier;
+                    PoisonDeltaTime += Time.deltaTime;
+                }
+                else PoisonDeltaTime = -1f;
+            }
 
             // converts move input to a worldspace vector based on our character's transform orientation
             Vector3 worldspaceMoveInput = transform.TransformVector(m_InputHandler.GetMoveInput());
@@ -433,4 +441,21 @@ public class PlayerCharacterController : MonoBehaviour
         isCrouching = crouched;
         return true;
     }
+
+    public void poisonTaken(float speedDecrease)
+    {
+        PoisonDeltaTime = 0f;
+        poisonModifier = (1-(speedDecrease/100));
+        poisonModifier = Mathf.Clamp(poisonModifier, 0.1f, 1f);
+
+        // while (true){
+        //     if (Time.time > timeBefore + 3) {poisonModifier = 1f; return;}
+        // }
+        // call OnHeal action
+        // float trueHealAmount = currentHealth - healthBefore;
+        // if (trueHealAmount > 0f && onHealed != null)
+        // {
+        //     onHealed.Invoke(trueHealAmount);
+        // }
+    } 
 }

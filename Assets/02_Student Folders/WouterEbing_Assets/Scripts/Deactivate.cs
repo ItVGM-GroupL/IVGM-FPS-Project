@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Deactivate : MonoBehaviour
 {
-    // Start is called before the first frame update
+    bool collected = false;
+
     void Start()
     {
-        gameObject.SetActive(false);
+        if (!collected) { gameObject.SetActive(false); }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }

@@ -12,6 +12,7 @@ public class ScoringSystem : MonoBehaviour
     public GameObject exitObjective;
     public static int theScore;
     public int goldNeeded;
+    public AudioSource collectSound;
 
     void Update()
     {

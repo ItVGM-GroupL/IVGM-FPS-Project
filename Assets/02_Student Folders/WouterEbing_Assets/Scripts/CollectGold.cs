@@ -9,7 +9,7 @@ public class CollectGold : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        collectSound.Play();
+        //collectSound.Play();
         ScoringSystem.theScore += 1;
         Destroy(gameObject);
     }

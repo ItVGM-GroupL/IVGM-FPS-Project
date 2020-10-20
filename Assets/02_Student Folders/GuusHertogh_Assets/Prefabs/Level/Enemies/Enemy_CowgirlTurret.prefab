@@ -295,7 +295,7 @@ MonoBehaviour:
   deathVFX: {fileID: 8950624839484268180, guid: 2a8f5052fe50f7b41b17149abb0f7414,
     type: 3}
   deathVFXSpawnPoint: {fileID: 381893446485871685}
-  lootPrefab: {fileID: 2529580269645609534, guid: 9973c412032becb4ca116ca08be62edf,
+  lootPrefab: {fileID: 2658556138675446264, guid: b408197824a974247b58254e9569b0d8,
     type: 3}
   dropRate: 1
   pathReachingRangeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -3776,7 +3776,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 528546716365072993, guid: ec753d54f333bb944b8b04884ad63828,
     type: 3}
   delayBetweenShots: 0.5
-  bulletSpreadAngle: 2
+  bulletSpreadAngle: 0
   bulletsPerShot: 1
   recoilForce: 1
   aimZoomRatio: 1

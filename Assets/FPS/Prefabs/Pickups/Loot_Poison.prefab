@@ -9821,7 +9821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7535462baa2ed0d469f708cbe145b720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Pickup the Poison
+  title: Pickup the Booze
   description: Optional
   isOptional: 1
   delayVisible: 0

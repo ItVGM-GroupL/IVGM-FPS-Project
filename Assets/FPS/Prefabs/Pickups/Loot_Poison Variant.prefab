@@ -80,8 +80,7 @@ PrefabInstance:
     - target: {fileID: 6111823463330461455, guid: b408197824a974247b58254e9569b0d8,
         type: 3}
       propertyPath: description
-      value: Booze increases max ammo and firerate of your weapons, BUT it causes
-        5 seconds of slowness.
+      value: This Upgades your weapon!
       objectReference: {fileID: 0}
     - target: {fileID: 6111823463330461455, guid: b408197824a974247b58254e9569b0d8,
         type: 3}

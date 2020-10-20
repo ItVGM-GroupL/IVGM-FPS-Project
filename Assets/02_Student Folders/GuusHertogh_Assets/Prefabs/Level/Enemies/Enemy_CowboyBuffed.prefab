@@ -146,7 +146,7 @@ MonoBehaviour:
   orientationSpeed: 10
   deathDuration: 0
   swapToNextWeapon: 1
-  delayAfterWeaponSwap: 0.4
+  delayAfterWeaponSwap: 0.3
   eyeColorMaterial: {fileID: 2100000, guid: e6fdfd4e017234d43ac116abee8fa90a, type: 2}
   defaultEyeColor: {r: 23.968628, g: 6.6509805, b: 0, a: 1}
   attackEyeColor: {r: 23.968628, g: 1.0076232, b: 0, a: 1}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27364eefd6dd0341ba72a3bfc0d9727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 120
+  maxHealth: 200
   criticalHealthRatio: 0.3
 --- !u!114 &3464315327790461765
 MonoBehaviour:
@@ -451,7 +451,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 528546716365072993, guid: ec753d54f333bb944b8b04884ad63828,
     type: 3}
   delayBetweenShots: 0.5
-  bulletSpreadAngle: 13
+  bulletSpreadAngle: 7
   bulletsPerShot: 1
   recoilForce: 1
   aimZoomRatio: 1
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 528546716365072993, guid: ec753d54f333bb944b8b04884ad63828,
     type: 3}
   delayBetweenShots: 0.5
-  bulletSpreadAngle: 15
+  bulletSpreadAngle: 1
   bulletsPerShot: 1
   recoilForce: 1
   aimZoomRatio: 1

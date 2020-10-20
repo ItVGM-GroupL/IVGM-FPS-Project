@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfDestructYHeight: -20
-  pathReachingRadius: 2
+  pathReachingRadius: 40
   orientationSpeed: 10
   deathDuration: 0
   swapToNextWeapon: 1
@@ -704,8 +704,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionSourcePoint: {fileID: 6571005840976436832}
-  detectionRange: 20
-  attackRange: 10
+  detectionRange: 40
+  attackRange: 20
   knownTargetTimeout: 12
   animator: {fileID: 0}
 --- !u!1 &6421371450313891992

@@ -253,7 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestructYHeight: -20
   pathReachingRadius: 100
-  orientationSpeed: 15
+  orientationSpeed: 20
   deathDuration: 0
   swapToNextWeapon: 1
   delayAfterWeaponSwap: 0.4
@@ -520,8 +520,8 @@ MonoBehaviour:
   turretAimPoint: {fileID: 8093968053717355754}
   aimRotationSharpness: 5
   lookAtRotationSharpness: 2.5
-  detectionFireDelay: 1
-  aimingTransitionBlendTime: 1
+  detectionFireDelay: 0
+  aimingTransitionBlendTime: 0.5
   randomHitSparks: []
   onDetectVFX: []
   onDetectSFX: {fileID: 0}
@@ -3499,7 +3499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6421371450313891992}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.47, y: 1.359, z: 0}
+  m_LocalPosition: {x: 0.32, y: 1.21, z: 0.158}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2015434656898269656}

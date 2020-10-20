@@ -15,24 +15,22 @@ public class ScoringSystem : MonoBehaviour
 
     void Update()
     {
-        if (theScore == 0)
+        if (theScore > 0 && theScore < goldNeeded)
+        {
+            scoreText.GetComponent<Text>().text = theScore + "/" + goldNeeded + " Gold";
+        }
+        else
         {
             scoreText.GetComponent<Text>().text = "";
         }
-        else if (theScore == 1) {
-            scoreText.GetComponent<Text>().text = theScore + " gold bar collected";
-        } 
-        else
-        {
-            scoreText.GetComponent<Text>().text = theScore + " gold bars collected";
-        }
+
         
         if (theScore >= goldNeeded)
         { 
             exitObjective.SetActive(true);
-            exitObjective.GetComponent<Objective>().title = "Hoera";
+            exitObjective.GetComponent<Objective>().title = "Exit found!";
             exitObjective.GetComponent<Objective>().description = "Gefeliciteerd";
-            exitObjective.GetComponent<Objective>().UpdateObjective("Description", "CounterText", "");
+            exitObjective.GetComponent<Objective>().UpdateObjective("Return to the carriage", "", "");
         }
     }
 }

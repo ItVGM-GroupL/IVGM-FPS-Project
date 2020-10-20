@@ -22,8 +22,14 @@ public class PoisonPickUp : MonoBehaviour
     void OnPicked(PlayerCharacterController player)
     {
         PlayerCharacterController playercontroller = player.GetComponent<PlayerCharacterController>();
+        PlayerWeaponsManager weaponcontroller = player.GetComponent<PlayerWeaponsManager>();
         playercontroller.poisonTaken(SpeedDecreaseAmount);
+        int numberofweapons = weaponcontroller.m_WeaponSlots.Length;
+        for (int i = 0; i < numberofweapons; i++){
+        	WeaponController temp = weaponcontroller.m_WeaponSlots[i];
+        	temp.poisonTaken();
 
+        }
         m_Pickup.PlayPickupFeedback();
 
         Destroy(gameObject);

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Playables;
 
 public enum WeaponShootType
 {
@@ -384,5 +385,11 @@ public class WeaponController : MonoBehaviour
         Vector3 spreadWorldDirection = Vector3.Slerp(shootTransform.forward, UnityEngine.Random.insideUnitSphere, spreadAngleRatio);
 
         return spreadWorldDirection;
+    }
+
+    public void poisonTaken(){
+        maxAmmo += 1;
+        delayBetweenShots *= 0.9f;      
+        return;  
     }
 }

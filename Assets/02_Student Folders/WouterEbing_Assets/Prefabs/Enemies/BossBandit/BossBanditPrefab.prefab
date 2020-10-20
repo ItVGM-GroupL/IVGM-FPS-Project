@@ -165,13 +165,13 @@ MonoBehaviour:
   shootType: 1
   projectilePrefab: {fileID: 528546716365072993, guid: 75993793b5395a4428fd738a4375a111,
     type: 3}
-  delayBetweenShots: 0.8
+  delayBetweenShots: 1
   bulletSpreadAngle: 0
-  bulletsPerShot: 1
+  bulletsPerShot: 2
   recoilForce: 1
   aimZoomRatio: 1
   aimOffset: {x: 0, y: 0, z: 0}
-  ammoReloadRate: 0.005
+  ammoReloadRate: 1
   ammoReloadDelay: 1
   maxAmmo: 1
   automaticReleaseOnCharged: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 0}
   muzzleFlashPrefab: {fileID: 0}
   unparentMuzzleFlash: 0
-  shootSFX: {fileID: 8300000, guid: a56e3c9f90e17894eb1625f603eceb54, type: 3}
+  shootSFX: {fileID: 8300000, guid: c6ee9b18434af0e43897eba102c3e258, type: 3}
   changeWeaponSFX: {fileID: 0}
   useContinuousShootSound: 0
   continuousShootStartSFX: {fileID: 0}
@@ -611,13 +611,13 @@ MonoBehaviour:
   shootType: 1
   projectilePrefab: {fileID: 528546716365072993, guid: 75993793b5395a4428fd738a4375a111,
     type: 3}
-  delayBetweenShots: 0.8
+  delayBetweenShots: 1
   bulletSpreadAngle: 0
-  bulletsPerShot: 1
+  bulletsPerShot: 2
   recoilForce: 1
   aimZoomRatio: 1
   aimOffset: {x: 0, y: 0, z: 0}
-  ammoReloadRate: 0.005
+  ammoReloadRate: 1
   ammoReloadDelay: 1
   maxAmmo: 1
   automaticReleaseOnCharged: 0
@@ -627,7 +627,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 0}
   muzzleFlashPrefab: {fileID: 0}
   unparentMuzzleFlash: 0
-  shootSFX: {fileID: 8300000, guid: a56e3c9f90e17894eb1625f603eceb54, type: 3}
+  shootSFX: {fileID: 8300000, guid: c6ee9b18434af0e43897eba102c3e258, type: 3}
   changeWeaponSFX: {fileID: 0}
   useContinuousShootSound: 0
   continuousShootStartSFX: {fileID: 0}

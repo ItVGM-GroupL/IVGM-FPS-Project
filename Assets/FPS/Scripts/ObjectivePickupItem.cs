@@ -20,8 +20,9 @@ public class ObjectivePickupItem : MonoBehaviour
 
     void OnPickup(PlayerCharacterController player)
     {
-        if (m_Objective.isCompleted)
+        if (m_Objective.isCompleted) 
             return;
+     
 
         // this will trigger the objective completion
         // it works even if the player can't pickup the item (i.e. objective pickup healthpack while at full heath)

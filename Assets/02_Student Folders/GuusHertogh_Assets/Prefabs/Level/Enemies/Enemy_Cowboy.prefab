@@ -60,7 +60,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015434656898269656}
   - component: {fileID: 9087143436424816424}
-  - component: {fileID: 4752156053906186385}
+  - component: {fileID: 742772846672395718}
   - component: {fileID: 6370966072896210225}
   - component: {fileID: 3464315327790461765}
   - component: {fileID: 7406548990343174644}
@@ -160,7 +160,7 @@ MonoBehaviour:
   pathReachingRangeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   attackRangeColor: {r: 1, g: 0, b: 0, a: 1}
   detectionRangeColor: {r: 0, g: 0, b: 1, a: 1}
---- !u!114 &4752156053906186385
+--- !u!114 &742772846672395718
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,25 +169,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2015434656898269652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1857b2df8de24b24190ce9e067d2e1e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1008fde9004ce384cb2c6b5784e32565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  attackStopDistanceRatio: 0.08
-  randomHitSparks:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  onDetectVFX:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  attackStopDistanceRatio: 0.087
+  randomHitSparks: []
+  onDetectVFX: []
   onDetectSFX: {fileID: 8300000, guid: 25722734eeccba042a18e26e376ca542, type: 3}
-  MovementSound: {fileID: 0}
+  MovementSound: {fileID: 8300000, guid: f404f8d3c2a4b4f48989fb1120e78fb8, type: 3}
   PitchDistortionMovementSpeed:
-    min: 1
-    max: 1.5
+    min: 0
+    max: 0
 --- !u!114 &6370966072896210225
 MonoBehaviour:
   m_ObjectHideFlags: 0

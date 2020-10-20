@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
+	
     [Tooltip("Maximum amount of health")]
     public float maxHealth = 10f;
     [Tooltip("Health ratio at which the critical health vignette starts appearing")]
@@ -87,4 +88,5 @@ public class Health : MonoBehaviour
             }
         }
     }
+	
 }

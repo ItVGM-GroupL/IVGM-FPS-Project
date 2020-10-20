@@ -9,14 +9,9 @@ public class CollectGold : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (tag == "Player")
-        {
-            collectSound.Play();
-            ScoringSystem.theScore += 1;
-            Destroy(gameObject);
-            print("Gold gepakt");
-        }
-
+        //collectSound.Play();
+        ScoringSystem.theScore += 1;
+        Destroy(gameObject);
     }
 
     void Update()

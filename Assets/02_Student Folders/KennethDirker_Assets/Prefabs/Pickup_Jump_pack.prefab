@@ -31,7 +31,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3100264605111817839}
+  - {fileID: 4946014801891654130}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,7 +99,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8200220640316782925}
+    m_TransformParent: {fileID: 4946014801891654130}
     m_Modifications:
     - target: {fileID: 1102153083266412, guid: 902302a87aac4484aa2ffbdb0a2fe6c3, type: 3}
       propertyPath: m_Name
@@ -135,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4936729453818518, guid: 902302a87aac4484aa2ffbdb0a2fe6c3, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936729453818518, guid: 902302a87aac4484aa2ffbdb0a2fe6c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -163,9 +163,109 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 902302a87aac4484aa2ffbdb0a2fe6c3, type: 3}
---- !u!4 &3100264605111817839 stripped
+--- !u!1001 &7807259396724367461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8200220640316782925}
+    m_Modifications:
+    - target: {fileID: -3392764770437148129, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390920, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectivePickupItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390932, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: delayBeforeShowing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390932, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: message
+      value: Pick up the double jump elixer!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390934, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: delayVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390934, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: title
+      value: Pick up Ye Olde Energy Drink
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390934, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: description
+      value: It is said that Te Olde Energy gives you wings, enabling the drinkers
+        to perform double jumps. I wonder if the rumours are true...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5e57422b1d4cd7418d7bd6037f5a604, type: 3}
+--- !u!4 &4946014801891654130 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4936729453818518, guid: 902302a87aac4484aa2ffbdb0a2fe6c3,
+  m_CorrespondingSourceObject: {fileID: 2953010396602390935, guid: a5e57422b1d4cd7418d7bd6037f5a604,
     type: 3}
-  m_PrefabInstance: {fileID: 3105183385851159801}
+  m_PrefabInstance: {fileID: 7807259396724367461}
   m_PrefabAsset: {fileID: 0}

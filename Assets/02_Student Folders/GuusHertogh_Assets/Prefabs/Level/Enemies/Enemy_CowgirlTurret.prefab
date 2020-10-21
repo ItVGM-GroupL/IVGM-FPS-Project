@@ -518,7 +518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretPivot: {fileID: 5000820914968298231}
   turretAimPoint: {fileID: 8093968053717355754}
-  aimRotationSharpness: 5
+  aimRotationSharpness: 20
   lookAtRotationSharpness: 2.5
   detectionFireDelay: 0
   aimingTransitionBlendTime: 0.5

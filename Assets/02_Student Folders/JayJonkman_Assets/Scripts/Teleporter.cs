@@ -3,12 +3,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Media;
-using System.Security.Cryptography;
 using UnityEngine;
 using System;
-using System.Security.Permissions;
-using System.Threading;
 
 public class Teleporter : MonoBehaviour
 {

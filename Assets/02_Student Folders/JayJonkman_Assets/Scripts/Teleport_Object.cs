@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Jay Jonkman
+//s2333368
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;

@@ -28,10 +28,13 @@ public class ScoringSystem : MonoBehaviour
         
         if (theScore >= goldNeeded)
         { 
-            exitObjective.SetActive(true);
-            exitObjective.GetComponent<Objective>().title = "Exit found!";
-            exitObjective.GetComponent<Objective>().description = "Gefeliciteerd";
-            exitObjective.GetComponent<Objective>().UpdateObjective("Return to the carriage", "", "");
+            if (exitObjective != null)
+            {
+                exitObjective.SetActive(true);
+                exitObjective.GetComponent<Objective>().title = "Exit found!";
+                exitObjective.GetComponent<Objective>().description = "Gefeliciteerd";
+                exitObjective.GetComponent<Objective>().UpdateObjective("Return to the carriage", "", "");
+            }
         }
     }
 }

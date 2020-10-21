@@ -19,14 +19,18 @@ public class JumppackPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Jumppack jumppack = other.GetComponent<Jumppack>();
-        jumppack.Enable();
-
-        if (pickupSFX)
+        if (other.tag == "Player")
         {
-            AudioUtility.CreateSFX(pickupSFX, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
+            Jumppack jumppack = other.GetComponent<Jumppack>();
+            jumppack.Enable();
+
+            if (pickupSFX)
+            {
+                AudioUtility.CreateSFX(pickupSFX, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
+            }
+
+            Destroy(gameObject);
         }
 
-        Destroy(gameObject);
     }
 }
